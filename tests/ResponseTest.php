@@ -18,7 +18,7 @@ class ResponseTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         $this->response = new Response;
 

@@ -22,7 +22,7 @@ class FileTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         $this->file = new File('tus.txt', CacheFactory::make());
 
@@ -668,7 +668,7 @@ class FileTest extends TestCase
      *
      * @return void.
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         m::close();
 

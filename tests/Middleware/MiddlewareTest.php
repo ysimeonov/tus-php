@@ -22,7 +22,7 @@ class MiddlewareTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         $this->middleware = new Middleware;
 
@@ -96,7 +96,7 @@ class MiddlewareTest extends TestCase
      *
      * @return void.
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         m::close();
 

@@ -24,7 +24,7 @@ class ApcuStoreTest extends TestCase
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$extensionLoaded = \extension_loaded('apcu');
 
@@ -38,7 +38,7 @@ class ApcuStoreTest extends TestCase
      *
      * @return void
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         if ( ! self::$extensionLoaded) {
             $this->markTestSkipped('APCU extension not loaded.');

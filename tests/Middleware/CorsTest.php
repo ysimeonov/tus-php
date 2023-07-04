@@ -21,7 +21,7 @@ class CorsTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         $this->cors = new Cors;
 
@@ -58,7 +58,7 @@ class CorsTest extends TestCase
      *
      * @return void.
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         m::close();
 

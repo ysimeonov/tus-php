@@ -27,7 +27,7 @@ class RedisStoreTest extends TestCase
      *
      * @return void
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         $connection = new RedisStore([
             'host' => getenv('REDIS_HOST'),
@@ -52,7 +52,7 @@ class RedisStoreTest extends TestCase
      *
      * @return void
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         if (false === static::$redisStore) {
             $this->markTestSkipped('Unable to connect to redis.');
@@ -252,7 +252,7 @@ class RedisStoreTest extends TestCase
      *
      * @return void
      */
-    public static function tearDownAfterClass()
+    public static function tearDownAfterClass(): void
     {
         if (false !== static::$redisStore) {
             $redis = static::$redisStore->getRedis();
